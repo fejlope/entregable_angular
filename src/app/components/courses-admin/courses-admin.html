@@ -1,0 +1,42 @@
+<mat-card class="fullscreen-card">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" routerLink="/" id="netec">Administración de cursos</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/coursesadd">+ Crear cursos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <mat-card-content class="cardbody">
+        <table>
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Valor</th>
+                    <th>Duración</th>
+                    <th>Nivel</th>
+                    <th>Descripción</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (course of courses(); track $index){
+                <tr>
+                    <td>{{course.name}}</td>
+                    <td>{{course.price}}</td>
+                    <td>{{course.duration}}</td>
+                    <td>{{course.level}}</td>
+                    <td>{{course.description}}</td>
+                    <td>
+                        <button matFab matTooltip="Editar"><mat-icon>edit</mat-icon></button>
+                        <button matFab matTooltip="Eliminar"(click)="deleteCourse(course.id)"><mat-icon>delete</mat-icon></button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>

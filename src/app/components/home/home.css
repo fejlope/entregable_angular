@@ -1,0 +1,41 @@
+#slider {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#slider img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.80 ease-in-out;
+}
+
+.hero-section {
+    padding: 4rem 2rem;
+    background-color: #f6f8fa;
+    border-radius: 20px;
+    box-shadow: 0ch;
+}
+
+.hero-img {
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+.stats span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+}

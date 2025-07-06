@@ -1,0 +1,74 @@
+.cardtitle{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.cardbody{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    overflow: auto;
+    padding-bottom: 20px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.fullscreen-card {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  height: 90%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.card {
+  max-width: 400px;
+  margin-bottom: 8px;
+  color: black;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+.card-section {
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.header-section {
+  background-color: #f5f5f5;
+}
+
+.description-section {
+  font-size: 14px;
+  color: #444;
+  height: 120px; /* o lo que necesites */
+  overflow-y: auto;
+}
+
+.action-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav{
+  border-radius: 20px;
+}

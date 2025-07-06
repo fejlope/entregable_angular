@@ -1,0 +1,42 @@
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #0d6efd;
+    
+}
+
+.navbar-brand span {
+    color: #0d6efd;
+}
+
+.btn-get-started {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+#netec{
+    font-size: 50px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding: 11px 0;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    line-height: 60px; 
+    z-index: 1000;
+}
+

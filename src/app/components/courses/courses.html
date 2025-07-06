@@ -1,0 +1,35 @@
+<mat-card class="fullscreen-card">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" routerLink="/" id="netec">Nuestros cursos disponibles</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <mat-card-content class="cardbody">
+        <div class="card-grid">
+            @for (course of courses(); track $index){
+            <mat-card class="card" appearance="outlined">
+                <!-- Sección: Encabezado del curso -->
+                <mat-card-header class="card-section header-section">
+                    <mat-card-title>{{ course.name }}</mat-card-title>
+                    <mat-card-subtitle>Valor: {{ course.price }}</mat-card-subtitle>
+                    <mat-card-subtitle>Duración: {{ course.duration }}</mat-card-subtitle>
+                    <mat-card-subtitle>Nivel: {{ course.level }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="card-section description-section">
+                    {{ course.description }}
+                </mat-card-content>
+                <mat-card-actions class="card-section action-section">
+                    <button class="btn btn-outline-primary" (click)="openInfoModal()">Agregar a vía de
+                        aprendizaje</button>
+                </mat-card-actions>
+            </mat-card>
+            }
+        </div>
+    </mat-card-content>
+</mat-card>

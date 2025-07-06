@@ -1,0 +1,15 @@
+.contenedor{
+    width: 500px;  
+    height: 350px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.imagen{
+    width: 400px;  
+    height: 200px;
+}
+
+.mensaje{
+    text-align: center;
+}
