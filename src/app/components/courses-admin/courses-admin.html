@@ -31,7 +31,9 @@
                     <td>{{course.level}}</td>
                     <td>{{course.description}}</td>
                     <td>
-                        <button matFab matTooltip="Editar"><mat-icon>edit</mat-icon></button>
+
+                        <!-- <button matFab matTooltip="Editar"><mat-icon>edit</mat-icon></button> -->
+                        <button mat-button [routerLink]="['/editar', course.id]">Editar</button>
                         <button matFab matTooltip="Eliminar"(click)="deleteCourse(course.id)"><mat-icon>delete</mat-icon></button>
                     </td>
                 </tr>

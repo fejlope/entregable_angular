@@ -41,7 +41,10 @@
                 <input matInput placeholder="Ingrese el valor del curso" formControlName="price">
             </mat-form-field>
 
-            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Guardar</button>
+            <!-- <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Guardar</button> -->
+            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+                {{ editing ? 'Actualizar' : 'Guardar' }}
+            </button>
         </form>
     </mat-card-content>
 </mat-card>

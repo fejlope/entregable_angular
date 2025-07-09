@@ -62,4 +62,15 @@ export class CourseSevice {
     })
   );
 }
+
+getCourseById(id: number): Observable<Course> {
+  return this.http.get<Course>(`${this.baseUri}/${id}`).pipe(
+    timeout(3000),
+    catchError((error: HttpErrorResponse) => {
+      console.error('Error al obtener el curso:', error);
+      return throwError(() => new Error('No se pudo obtener el curso. Intenta más tarde.'));
+    })
+  );
+}
+
 }

@@ -8,6 +8,7 @@ export const routes: Routes = [
     {path:'', component:Home},
     {path:'courses', component:Courses},
     {path:'coursesAdmin', component:CoursesAdmin},
-    {path:'coursesadd', component:CourseForm}
+    {path:'coursesadd', component:CourseForm},
+    {path:'editar/:id', component: CourseForm }
 
 ];
