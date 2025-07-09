@@ -95,33 +95,4 @@ export class CourseForm {
       error: err => console.error('Error guardando curso', err)
     });
   }
-
-
-  /*
-  submit(){
-    let name=this.form.controls.name.value!;
-    let description=this.form.controls.description.value!;
-    let duration=this.form.controls.duration.value!;
-    let level=this.form.controls.level.value!;
-    let price=this.form.controls.price.value!;
-
-    let course:Course={
-      id: 0,
-      name: name,
-      description: description,
-      duration: duration,
-      level: level,
-      price: price
-
-    
-    }
-    this.service.insertCourse(course).pipe(take(1)).subscribe({
-      next: value => {
-        this.router.navigate(['courses'])
-      },
-      error: err=>{console.log(err)}
-    });
-  }
-
-  */
 }
